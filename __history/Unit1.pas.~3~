@@ -1,0 +1,23 @@
+unit Unit1;
+
+
+interface
+uses
+System.SysUtils;
+   var
+
+   name:string[15];
+   surname:string[15];
+   company:string[20];
+   title:string[15];
+   email:string[40];
+   f:textfile;
+
+
+
+
+implementation
+{$R *.dfm}
+
+
+end.

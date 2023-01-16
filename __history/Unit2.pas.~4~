@@ -1,0 +1,49 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus,unit1;
+
+type
+  TForm2 = class(TForm)
+    MainMenu1: TMainMenu;
+    File1: TMenuItem;
+    AddressBook1: TMenuItem;
+    Exit1: TMenuItem;
+    N1: TMenuItem;
+    OpenDialog1: TOpenDialog;
+    procedure AddressBook1Click(Sender: TObject);
+    procedure Exit1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+         
+{$R *.dfm}
+
+uses 
+ unit3;
+
+procedure TForm2.AddressBook1Click(Sender: TObject);
+
+begin
+
+
+form3.show;
+
+end;
+                                                      
+procedure TForm2.Exit1Click(Sender: TObject);
+begin
+application.Terminate;
+end;
+
+end.

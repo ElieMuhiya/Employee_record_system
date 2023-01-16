@@ -1,0 +1,33 @@
+unit Unit1;
+
+
+interface
+uses
+System.SysUtils;
+
+
+
+type D=class
+
+   name:string[15];
+   surname:string[15];
+   company:string[20];
+   title:string[15];
+   email:string[40];
+   f:textfile;
+  end;
+
+       function  DoSomething(n:string):string ;
+
+implementation
+{$R *.dfm}
+  var
+  id:D;
+
+function DoSomething(n:string):string;
+
+begin
+  id.name:=n;
+end;
+
+end.

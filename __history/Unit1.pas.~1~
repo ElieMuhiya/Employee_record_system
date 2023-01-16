@@ -1,0 +1,28 @@
+unit Unit1;
+
+
+interface
+uses
+System.SysUtils,
+             unit2;
+
+type id_details=record
+
+   name:string[15];
+   surname:string[15];
+   company:string[20];
+   title:string[15];
+   email:string[40];
+   f:textfile;
+
+   public
+   function  DoSomething: string;
+  end;
+
+implementation
+function id_details. DoSomething  : string;
+begin
+  Result := 'Something done';
+end;
+
+end.
